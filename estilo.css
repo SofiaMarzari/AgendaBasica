@@ -1,0 +1,27 @@
+body{
+    background-color: springgreen;
+}
+.tareaHecha{
+    text-decoration: line-through;
+    color: red;
+}
+.is-elem:link{
+   text-decoration: none;
+    color: darkred;
+    background-color: grey;
+    border-radius: 10px;
+    margin-left: 10px;
+}
+.is-listo:link{
+    text-decoration: none;
+    color: teal;
+    background-color: thistle;
+    border-radius: 10px;
+    margin-left: 10px;
+}
+.is-elem:active{
+    color: darkred;
+}
+.is-listo:active{
+    color: teal;
+}
