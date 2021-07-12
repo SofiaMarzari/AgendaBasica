@@ -2,7 +2,7 @@
     require_once('controller/tareascontroller.php');
     require_once('controller/usuariocontroller.php');
     require_once('controller/logincontroller.php');
-    require_once('api/Router.php');
+    require_once('Router.php');
 
     $action = $_GET['resource'];
     if(isset($action)){

@@ -2,7 +2,7 @@
     class usuariomodel{
         private $db;
         public function __construct(){
-            $this->db = new PDO('mysql:host=localhost;'.'dbname=tareas', 'root', '');
+            $this->db = new PDO('mysql:host=localhost;'.'dbname=gestiontareas', 'root', '');
         }
 
         public function guardarUsuario($usu, $pass){

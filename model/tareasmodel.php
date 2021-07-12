@@ -4,7 +4,7 @@
     class tareasmodel{
         private $db;
         public function __construct(){
-            $this->db = new PDO('mysql:host=localhost;'.'dbname=tareas;','root','');
+            $this->db = new PDO('mysql:host=localhost;'.'dbname=gestiontareas;','root','');
             $this->db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
         }      
         public function mostrarTarea(){
