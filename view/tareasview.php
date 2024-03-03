@@ -8,7 +8,7 @@
             $smarty = new Smarty();
             $smarty->assign('titulo', "Lista de tareas");
             $smarty->assign('tareas', $result);
-            $smarty->display('templates/inicio.tpl');
+            $smarty->display('templates/home.tpl');
         }
     }
 

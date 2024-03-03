@@ -24,7 +24,7 @@
             }else{
                 $compl = 0;
             }
-            $this->objModelo->insertarTarea($_POST["tituloTarea"], $_POST["descripTarea"], $compl);
+            $this->objModelo->insertarTarea($_POST["horarioTarea"], $_POST["descripTarea"], $compl);
             header('Location: http://'.$_SERVER['SERVER_NAME'].dirname($_SERVER['PHP_SELF']). '/home');
         }
 

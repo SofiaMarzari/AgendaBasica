@@ -1,0 +1,142 @@
+body {
+    background-color: whitesmoke;
+    margin: 0px;
+}
+
+
+/*** HEADER ***/
+
+header {
+    background-color: rgb(63 3 133);
+    height: 80px;
+}
+
+header>h1 {
+    text-align: center;
+    color: whitesmoke;
+    padding-top: 10px;
+}
+
+
+/*** fin HEADER ***/
+
+
+/*** LOGIN ***/
+
+.container-log {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.section-form-log {
+    margin: 3%;
+    width: 400px;
+    height: auto;
+    padding: 2% 0% 2% 0%;
+    background-color: rgba(133, 43, 236, 0.363);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.section-form-log>form {
+    display: flex;
+    flex-direction: column;
+    width: 250px;
+    margin-left: 18%;
+}
+
+.section-form-log>h2 {
+    text-align: center;
+    color: rgb(63 3 133);
+}
+
+form>input {
+    margin-bottom: 3%;
+}
+
+.btn-primary:hover {
+    opacity: 0.8;
+}
+
+.btn-primary {
+    background-color: rgb(63 3 133)!important;
+    margin-top: 5%;
+    width: 50%;
+    margin-left: 25%;
+}
+
+
+/*** fin LOGIN ***/
+
+
+/*** FOOTER ***/
+
+footer {
+    background-color: rgb(63 3 133);
+    height: 20px;
+}
+
+footer>h6 {
+    text-align: center;
+    padding-top: 1px;
+    color: whitesmoke;
+}
+
+
+/*** finFOOTER ***/
+
+
+/***HOME**/
+
+.table {
+    width: 800px !important;
+    margin: 3% 0% 3% 3%;
+}
+
+.table-tareas>tr>td {
+    background-color: black;
+    color: whitesmoke;
+    font-size: x-large;
+}
+
+.tareaHecha {
+    text-decoration: line-through;
+    color: red;
+}
+
+a {
+    color: whitesmoke !important;
+    text-decoration: none !important;
+}
+
+
+/*
+.is-elem:link {
+    text-decoration: none;
+    color: darkred;
+    background-color: grey;
+    border-radius: 10px;
+    margin-left: 10px;
+}
+
+.is-listo:link {
+    text-decoration: none;
+    color: teal;
+    background-color: thistle;
+    border-radius: 10px;
+    margin-left: 10px;
+}
+
+.is-elem:active {
+    color: darkred;
+}
+
+.is-listo:active {
+    color: teal;
+}*/
+
+
+/***fin HOME****/

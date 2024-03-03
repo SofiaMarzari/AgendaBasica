@@ -3,7 +3,7 @@
         private $db;
 
         public function __construct(){
-            $this->db = new PDO('mysql:host=localhost;'.'dbname=gestiontareas', 'root', '');
+            $this->db = new PDO('mysql:host=localhost;'.'dbname=gestiontareas', 'root', '23344');
         }
 
         public function consultUsuario($usuario){

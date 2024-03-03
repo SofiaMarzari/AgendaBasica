@@ -4,7 +4,7 @@
     class tareasmodel{
         private $db;
         public function __construct(){
-            $this->db = new PDO('mysql:host=localhost;'.'dbname=gestiontareas;','root','');
+            $this->db = new PDO('mysql:host=localhost;'.'dbname=gestiontareas;','root','23344');
             $this->db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
         }      
         public function mostrarTarea(){
@@ -19,9 +19,9 @@
             $result = $data->fetchAll();
             return $result;
         }
-        public function insertarTarea($tit, $desc, $compl){     
-            $data = $this->db->prepare("INSERT INTO tarea(titulo,descripcion,completada) VALUES(?,?,?)");
-            $data->execute(array($tit,$desc,$compl));
+        public function insertarTarea($hor, $desc, $compl){     
+            $data = $this->db->prepare("INSERT INTO tarea(horario,descripcion,completada,id_user) VALUES(?,?,?,?)");
+            $data->execute(array($hor,$desc,$compl,0));
         }
         public function borrarTarea($id){
             $data = $this->db->prepare("DELETE FROM tarea WHERE id=?");

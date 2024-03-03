@@ -6,6 +6,10 @@
             $smarty = new Smarty();
             $smarty->display("templates/login.tpl");
         }
+        public function mostrarRegistro(){
+            $smarty = new Smarty();
+            $smarty->display("templates/registro.tpl");
+        }
     }
 
 ?>

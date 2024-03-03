@@ -8,8 +8,10 @@
             $this->modelUsuario = new usuariomodel();
         }
         public function registro(){
-            $newUsu = $_POST['registroUsuario'];
+            $newUsu = $_POST['registroMail'];
             $newPass = $_POST['registroContraseña'];
+            $newNom = $_POST['registroNombre'];
+            $newApe = $_POST['registroApellido'];
 
             $this->modelUsuario->guardarUsuario($newUsu, $newPass);
             header('Location: http://'.$_SERVER['SERVER_NAME'].dirname($_SERVER['PHP_SELF']). '/home');
