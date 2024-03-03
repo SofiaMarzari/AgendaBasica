@@ -17,10 +17,10 @@
     <section class="section-form-log">
         <h2>Login</h2>
         <form action="ingresar" method="post">
-            <label for="registroUsuario">Email:</label>
-                <input type="email" class="form-control" id="registroUsuario" name="formNomUsuario" aria-describedby="emailHelp" placeholder="Email">
-            <label for="registroContraseña">Contraseña:</label>
-                <input type="password" class="form-control" id="registroContraseña" name="formContraseña" placeholder="Contraseña">
+            <label for="loginMail">Email:</label>
+                <input type="email" class="form-control" id="loginMail" name="loginMail" aria-describedby="emailHelp" placeholder="Email">
+            <label for="loginContraseña">Contraseña:</label>
+                <input type="password" class="form-control" id="loginContraseña" name="loginContraseña" placeholder="Contraseña">
             <button type="submit" class="btn btn-primary">Iniciar Sesión</button>
         </form>
     </section>

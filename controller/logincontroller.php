@@ -16,8 +16,8 @@
             $this->viewLogin->mostrarLogin();
         }
         public function verificar(){
-            $usu = $_POST['formNomUsuario'];
-            $contraseña = $_POST['formContraseña'];
+            $usu = $_POST['loginMail'];
+            $contraseña = $_POST['loginContraseña'];
             $existencia = $this->modelLogin->consultUsuario($usu);
             if(isset($existencia)){
                 $pass = $this->modelLogin->consultaHash($usu);
